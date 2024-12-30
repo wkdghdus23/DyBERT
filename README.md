@@ -83,13 +83,13 @@ If you are using a virtual environment (e.g., with Miniconda), you can set the `
    - **Step 1**. Create an activation script that sets the `PYTHONPATH` every time the environment is activated:
    ```bash
    mkdir -p $CONDA_PREFIX/etc/conda/activate.d
-   echo "unset PYTHONPATH" >> $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
-   echo "export PYTHONPATH=$PYTHONPATH:(path/to/your/package)/DyBERT/" >> $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
+   echo 'unset PYTHONPATH' >> $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
+   echo 'export PYTHONPATH=$PYTHONPATH:(path/to/your/package)/DyBERT/' >> $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
    ```
    - **Step 2**. Create a deactivation script to unset `PYTHONPATH` when the environment is deactivated:
    ```bash
    mkdir -p $CONDA_PREFIX/etc/conda/deactivate.d
-   echo "unset PYTHONPATH" >> $CONDA_PREFIX/etc/conda/deactivate.d/env_vars.sh
+   echo 'unset PYTHONPATH' >> $CONDA_PREFIX/etc/conda/deactivate.d/env_vars.sh
    ```
    This will make sure that the `PYTHONPATH` variable is cleared when the environment is deactivated, preventing any unwanted effect on other environments or system-level Python sessions.
    - **Step 3**. Restart your virtual environment
