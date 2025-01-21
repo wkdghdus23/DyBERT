@@ -138,9 +138,9 @@ Before running the examples, navigate to the example directory, which contains t
    ```
 
 ### Task 1. Train the Masked Language Model (MLM) using the QM9 dataset
-In this example, you will train a Masked Language Model (MLM) using the QM9 dataset. The MLM task involves masking certain parts of the input data and training the model to predict these masked parts. This helps the model learn contextual embeddings for chemical structures, which can be useful for downstream tasks such as property prediction.
+In this example, you will train a Masked Language Model (MLM) using the QM9 dataset. The MLM task involves masking certain parts of the input data and training the model to predict these masked parts. This helps the model learn contextual embeddings for chemical structures, which can be useful for `downstream` tasks such as property prediction.
 
-Perform the training task with the following parameters:
+Perform the `mlm` training task with the following parameters:
 
    - **Masking ratio**: 15% of the tokens are masked.
    - **Batch size**: 32 (The number of samples processed before the model is updated).
@@ -151,9 +151,9 @@ Perform the training task with the following parameters:
    ```
 
 ### Task 2. Load pre-trained MLM and train the downstream model (HOMO and LUMO values in QM9 dataset)
-After training the Masked Language Model, you can use it for downstream tasks. In this example, you will load the pre-trained MLM and train a downstream model to predict the HOMO and LUMO values in the QM9 dataset.
+After training the `mlm`, you can use it for `downstream` tasks. In this example, you will load the pre-trained MLM and train a `downstream` model to predict the HOMO and LUMO values in the QM9 dataset.
 
-Perform the downstream training task with the following parameters:
+Perform the `downstream` training task with the following parameters:
 
    - **Target**: HOMO and LUMO values.
    - **Batch size**: 32 (The number of samples processed before the model is updated).
