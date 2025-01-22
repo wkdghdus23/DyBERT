@@ -167,8 +167,8 @@ Perform the `downstream` training task with the following parameters:
 ### Model Performance
 The performance of the DyBERT was evaluated on the prediction of HOMO and LUMO energy levels. The scatter plots below illustrate the correlation between the calculated and predicted values for the HOMO and LUMO levels.
    - **HOMO Prediction (Left):**
-      - R² score: 0.938
-      - MAE: 111 meV
+      - R² score: 0.937
+      - MAE: 113 meV
    - **LUMO Prediction (Right):**
       - R² score: 0.986
       - MAE: 103 meV
